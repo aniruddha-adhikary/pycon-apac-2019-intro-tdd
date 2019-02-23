@@ -33,10 +33,10 @@ The card number has to start with the mentioned IIN range(s).
 ## Running Tests
 
 ```
-$ python card_validator/issuers.py
+$ python -m tests.test_issuers
 ```
 
 ## Tasks
 
-1. Fix the `get_issuer` function in `card_validator/issuers.py` to fix a bug.
-2. Add a test case for testing American Express cards.
+1. Make a function out of the statements in `tests/test_issuers.py`.
+2. Make three separate functions for testing Visa, MasterCard and American Express.
