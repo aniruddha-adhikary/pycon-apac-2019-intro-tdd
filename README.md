@@ -30,12 +30,6 @@ https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_.
 
 The card number has to start with the mentioned IIN range(s).
 
-## Installing prerequisites
-
-```
-$ pip install pytest
-```
-
 ## Running Tests
 
 ```
@@ -44,6 +38,5 @@ $ pytest
 
 ## Tasks
 
-1. Install pytest.
-2. Try to run `pytest` to automatically run the three tests.
-3. If they run, awesome! If not, investigate why. Could it be something related to the names of the functions?
+1. Fix the functionality of the `get_issuer` function so that tests pass.
+2. Write a test case for checking the `ValueError` for unknown card types.
