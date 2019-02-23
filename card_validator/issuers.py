@@ -12,7 +12,7 @@ https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_.
 import re
 
 PATTERNS = {
-    'Visa': re.compile(r'.*'),
+    'Visa': re.compile(r'^4'),
     'MasterCard': re.compile(r'^5[1-5]'),
     'American Express': re.compile(r'^347'),
 }

@@ -38,5 +38,7 @@ $ pytest
 
 ## Tasks
 
-1. Fix the functionality of the `get_issuer` function so that tests pass.
-2. Write a test case for checking the `ValueError` for unknown card types.
+1. Write a `TestCase` class, maybe `ValidCreditCardTest`.
+2. Turn the functions into methods of the class.
+3. Write another `TestCase` class (maybe `CardIssuerConfusionTest`) to cover negating cases.
+(Invalid card numbers, like VISA marked as MasterCard)
