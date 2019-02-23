@@ -38,7 +38,5 @@ $ pytest
 
 ## Tasks
 
-1. Write a `TestCase` class, maybe `ValidCreditCardTest`.
-2. Turn the functions into methods of the class.
-3. Write another `TestCase` class (maybe `CardIssuerConfusionTest`) to cover negating cases.
-(Invalid card numbers, like VISA marked as MasterCard)
+1. [Look up on parametrization](https://docs.pytest.org/en/latest/parametrize.html) with `pytest`.
+2. Parametrize as many tests as you can.
