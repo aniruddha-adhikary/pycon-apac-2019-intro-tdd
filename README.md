@@ -30,13 +30,20 @@ https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_.
 
 The card number has to start with the mentioned IIN range(s).
 
+## Installing prerequisites
+
+```
+$ pip install pytest
+```
+
 ## Running Tests
 
 ```
-$ python -m tests.test_issuers
+$ pytest
 ```
 
 ## Tasks
 
-1. Make a function out of the statements in `tests/test_issuers.py`.
-2. Make three separate functions for testing Visa, MasterCard and American Express.
+1. Install pytest.
+2. Try to run `pytest` to automatically run the three tests.
+3. If they run, awesome! If not, investigate why. Could it be something related to the names of the functions?
