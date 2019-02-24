@@ -59,8 +59,8 @@ response = requests.post('http://tuxboy.pythonanywhere.com/api/v3/checkNumber', 
 
 ## Tasks
 
-1. Use the `RemoteCreditCardChecker` class to get the issuer.
-2. Write tests for `RemoteCreditCardChecker`.
+1. Use the `get_issuer_from_api` function to get the issuer.
+2. Write tests for `get_issuer_from_api`.
 3. Turn off the internet / Wi-Fi.
 4. Feel like hope probably ran out.
 5. Start mocking.
