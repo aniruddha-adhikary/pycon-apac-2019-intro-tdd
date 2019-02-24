@@ -30,13 +30,37 @@ https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_.
 
 The card number has to start with the mentioned IIN range(s).
 
+## Installing Prerequisites
+
+```
+$ pip install -r requirements.txt
+```
+
 ## Running Tests
 
 ```
 $ pytest
 ```
 
+## API Spec
+
+Hosted on: `http://tuxboy.pythonanywhere.com`.
+
+```
+POST /api/v3/checkNumber
+number=2329582342313
+```
+
+```python
+import requests
+
+response = requests.post('http://tuxboy.pythonanywhere.com/api/v3/checkNumber', data={'number': '123'})
+```
+
 ## Tasks
 
-1. [Look up on parametrization](https://docs.pytest.org/en/latest/parametrize.html) with `pytest`.
-2. Parametrize as many tests as you can.
+1. Use the `RemoteCreditCardChecker` class to get the issuer.
+2. Write tests for `RemoteCreditCardChecker`.
+3. Turn off the internet / Wi-Fi.
+4. Feel like hope probably ran out.
+5. Start mocking.
