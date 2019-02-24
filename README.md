@@ -30,37 +30,14 @@ https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_.
 
 The card number has to start with the mentioned IIN range(s).
 
-## Installing Prerequisites
-
-```
-$ pip install -r requirements.txt
-```
-
 ## Running Tests
 
 ```
 $ pytest
 ```
 
-## API Spec
-
-Hosted on: `http://tuxboy.pythonanywhere.com`.
-
-```
-POST /api/v3/checkNumber
-number=2329582342313
-```
-
-```python
-import requests
-
-response = requests.post('http://tuxboy.pythonanywhere.com/api/v3/checkNumber', data={'number': '123'})
-```
-
 ## Tasks
-
-1. Use the `get_issuer_from_api` function to get the issuer.
-2. Write tests for `get_issuer_from_api`.
-3. Turn off the internet / Wi-Fi.
-4. Feel like hope probably ran out.
-5. Start mocking.
+1. Try to write tests for `cardme.py`.
+2. Don't waste time hooking to STDOUT.
+3. Refactor the function and extract out items to make testing easy.
+4. Try to apply the things you experienced thus far!
